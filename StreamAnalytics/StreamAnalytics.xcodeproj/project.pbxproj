@@ -31,6 +31,13 @@
 		493486F91BA183080068C32E /* Stream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; };
 		49C3763B1B8E73C0001F5609 /* StreamEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3763A1B8E73C0001F5609 /* StreamEvent.m */; };
 		49E7492E1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7492D1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift */; };
+		B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2261D758EE90011A2D9 /* StreamAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6D3D1B8880470088C872 /* StreamAnalytics.m */; };
+		B60CE2281D758EE90011A2D9 /* StreamEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3763A1B8E73C0001F5609 /* StreamEvent.m */; };
+		B60CE22B1D758EE90011A2D9 /* StreamEngagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DAE1B8918A70088C872 /* StreamEngagement.m */; };
+		B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
+		B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
+		B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,9 @@
 		49C376371B8E61EF001F5609 /* Stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stream.h; sourceTree = "<group>"; };
 		49C3763A1B8E73C0001F5609 /* StreamEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamEvent.m; sourceTree = "<group>"; };
 		49E7492D1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAnalyticsSwiftTests.swift; sourceTree = "<group>"; };
+		B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamAnalyticsCarthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamAnalyticsCarthage.h; sourceTree = "<group>"; };
+		B60CE2101D758E9E0011A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B60CE2091D758E9E0011A2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +125,7 @@
 			children = (
 				490B6D3A1B8880470088C872 /* StreamAnalytics */,
 				490B6D471B8880470088C872 /* StreamAnalyticsTests */,
+				B60CE20E1D758E9E0011A2D9 /* StreamAnalyticsCarthage */,
 				490B6D391B8880470088C872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +135,7 @@
 			children = (
 				490B6D381B8880470088C872 /* libStreamAnalytics.a */,
 				490B6D431B8880470088C872 /* StreamAnalyticsTests.xctest */,
+				B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +178,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B60CE20E1D758E9E0011A2D9 /* StreamAnalyticsCarthage */ = {
+			isa = PBXGroup;
+			children = (
+				B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */,
+				B60CE2101D758E9E0011A2D9 /* Info.plist */,
+			);
+			path = StreamAnalyticsCarthage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B60CE20A1D758E9E0011A2D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */,
+				B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		490B6D371B8880470088C872 /* StreamAnalytics */ = {
@@ -197,6 +237,24 @@
 			productReference = 490B6D431B8880470088C872 /* StreamAnalyticsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B60CE20C1D758E9E0011A2D9 /* StreamAnalyticsCarthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalyticsCarthage" */;
+			buildPhases = (
+				B60CE2081D758E9E0011A2D9 /* Sources */,
+				B60CE2091D758E9E0011A2D9 /* Frameworks */,
+				B60CE20A1D758E9E0011A2D9 /* Headers */,
+				B60CE20B1D758E9E0011A2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamAnalyticsCarthage;
+			productName = StreamAnalyticsCarthage;
+			productReference = B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,17 +262,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Stream;
 				TargetAttributes = {
 					490B6D371B8880470088C872 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					490B6D421B8880470088C872 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					49E7492F1B9E1270007B23E7 = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					B60CE20C1D758E9E0011A2D9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PAKLV2RW9L;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -233,12 +298,20 @@
 				490B6D371B8880470088C872 /* StreamAnalytics */,
 				490B6D421B8880470088C872 /* StreamAnalyticsTests */,
 				49E7492F1B9E1270007B23E7 /* UniversalLib */,
+				B60CE20C1D758E9E0011A2D9 /* StreamAnalyticsCarthage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		490B6D411B8880470088C872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60CE20B1D758E9E0011A2D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,6 +358,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B60CE2081D758E9E0011A2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60CE2281D758EE90011A2D9 /* StreamEvent.m in Sources */,
+				B60CE22B1D758EE90011A2D9 /* StreamEngagement.m in Sources */,
+				B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */,
+				B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */,
+				B60CE2261D758EE90011A2D9 /* StreamAnalytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,8 +399,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -337,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -357,8 +444,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -373,9 +462,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -388,6 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -399,6 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -421,6 +513,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreamAnalyticsTests/StreamAnalyticsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -438,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreamAnalyticsTests/StreamAnalyticsTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -452,6 +546,61 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B60CE21F1D758E9F0011A2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAKLV2RW9L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StreamAnalyticsCarthage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalyticsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B60CE2201D758E9F0011A2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAKLV2RW9L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StreamAnalyticsCarthage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalyticsCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -493,6 +642,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalyticsCarthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60CE21F1D758E9F0011A2D9 /* Debug */,
+				B60CE2201D758E9F0011A2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

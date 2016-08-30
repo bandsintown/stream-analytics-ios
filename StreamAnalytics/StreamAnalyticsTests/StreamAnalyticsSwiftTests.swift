@@ -26,8 +26,8 @@ class StreamAnalyticsSwiftTests: XCTestCase {
     }
 
     func testTrackImpressionEventCallback() {
-        let expectation:XCTestExpectation = expectationWithDescription("Track async impression event")
-        let event = StreamImpression.createImpressionEventWithContentList(["id1", "id2"])
+        let expectation:XCTestExpectation = self.expectation(description: "Track async impression event")
+        let event = StreamImpression.createImpressionEvent(withContentList: ["id1", "id2"])
 
         StreamAnalytics.sharedInstance().setUserId("dude");
         StreamAnalytics.sharedInstance().send(event, completionHandler: { (statusCode, json, error) -> Void in
@@ -39,7 +39,7 @@ class StreamAnalyticsSwiftTests: XCTestCase {
             
         })
         
-        waitForExpectationsWithTimeout(10, handler: { (error) -> Void in
+        waitForExpectations(timeout: 10, handler: { (error) -> Void in
             XCTAssertNil(error)
         })
 
@@ -47,7 +47,7 @@ class StreamAnalyticsSwiftTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure() {
             // Put the code you want to measure the time of here.
         }
     }

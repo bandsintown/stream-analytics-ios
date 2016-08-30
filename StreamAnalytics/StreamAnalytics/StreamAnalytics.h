@@ -77,8 +77,8 @@ typedef void (^ StreamRequestResult)(NSInteger, id, NSError*);
 /**
  *  class instance method, sends the actual data to the server with a completion handler called when done
  *
- *  @param StreamEvent the stream event to track
- *  @param StreamRequestResult completion block called with status, id and or error
+ *  @param event the stream event to track
+ *  @param result completion block called with status, id and or error
  */
 - (void)send:(StreamEvent *)event completionHandler:(StreamRequestResult) result;
 

@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "490B6D371B8880470088C872"
-               BuildableName = "libStreamAnalytics.a"
-               BlueprintName = "StreamAnalytics"
-               ReferencedContainer = "container:StreamAnalytics.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "490B6D421B8880470088C872"
-               BuildableName = "StreamAnalyticsTests.xctest"
-               BlueprintName = "StreamAnalyticsTests"
+               BlueprintIdentifier = "B60CE20C1D758E9E0011A2D9"
+               BuildableName = "StreamAnalyticsCarthage.framework"
+               BlueprintName = "StreamAnalyticsCarthage"
                ReferencedContainer = "container:StreamAnalytics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "490B6D421B8880470088C872"
-               BuildableName = "StreamAnalyticsTests.xctest"
-               BlueprintName = "StreamAnalyticsTests"
+               BlueprintIdentifier = "B60CE2141D758E9E0011A2D9"
+               BuildableName = "StreamAnalyticsCarthageTests.xctest"
+               BlueprintName = "StreamAnalyticsCarthageTests"
                ReferencedContainer = "container:StreamAnalytics.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490B6D371B8880470088C872"
-            BuildableName = "libStreamAnalytics.a"
-            BlueprintName = "StreamAnalytics"
+            BlueprintIdentifier = "B60CE20C1D758E9E0011A2D9"
+            BuildableName = "StreamAnalyticsCarthage.framework"
+            BlueprintName = "StreamAnalyticsCarthage"
             ReferencedContainer = "container:StreamAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490B6D371B8880470088C872"
-            BuildableName = "libStreamAnalytics.a"
-            BlueprintName = "StreamAnalytics"
+            BlueprintIdentifier = "B60CE20C1D758E9E0011A2D9"
+            BuildableName = "StreamAnalyticsCarthage.framework"
+            BlueprintName = "StreamAnalyticsCarthage"
             ReferencedContainer = "container:StreamAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490B6D371B8880470088C872"
-            BuildableName = "libStreamAnalytics.a"
-            BlueprintName = "StreamAnalytics"
+            BlueprintIdentifier = "B60CE20C1D758E9E0011A2D9"
+            BuildableName = "StreamAnalyticsCarthage.framework"
+            BlueprintName = "StreamAnalyticsCarthage"
             ReferencedContainer = "container:StreamAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
