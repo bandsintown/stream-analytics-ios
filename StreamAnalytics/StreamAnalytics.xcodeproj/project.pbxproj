@@ -37,7 +37,6 @@
 		B60CE22B1D758EE90011A2D9 /* StreamEngagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DAE1B8918A70088C872 /* StreamEngagement.m */; };
 		B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
 		B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
-		B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +193,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */,
 				B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
