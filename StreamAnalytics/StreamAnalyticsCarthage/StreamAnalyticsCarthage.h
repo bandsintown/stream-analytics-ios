@@ -15,5 +15,7 @@ FOUNDATION_EXPORT double StreamAnalyticsCarthageVersionNumber;
 FOUNDATION_EXPORT const unsigned char StreamAnalyticsCarthageVersionString[];
 
 #import "Stream.h"
+#import "StreamAnalytics+Protected.h"
+#import "StreamClient.h"
 
 
