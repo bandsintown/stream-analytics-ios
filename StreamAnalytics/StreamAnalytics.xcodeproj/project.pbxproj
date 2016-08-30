@@ -37,6 +37,13 @@
 		B60CE22B1D758EE90011A2D9 /* StreamEngagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DAE1B8918A70088C872 /* StreamEngagement.m */; };
 		B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
 		B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
+		B60CE2341D75AF6F0011A2D9 /* StreamAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6D3B1B8880470088C872 /* StreamAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2351D75AF7E0011A2D9 /* StreamAnalytics+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 498170C31B95AAF00002FF05 /* StreamAnalytics+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2361D75AF7E0011A2D9 /* StreamEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DAA1B89152C0088C872 /* StreamEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2371D75AF7E0011A2D9 /* Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2381D75AF7E0011A2D9 /* StreamEngagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DAD1B8918A70088C872 /* StreamEngagement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE2391D75AF7E0011A2D9 /* StreamImpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DBA1B8A70AD0088C872 /* StreamImpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60CE23A1D75AF7E0011A2D9 /* StreamClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 49161D271B8C4F4B00BA518F /* StreamClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +200,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60CE2371D75AF7E0011A2D9 /* Stream.h in Headers */,
+				B60CE2391D75AF7E0011A2D9 /* StreamImpression.h in Headers */,
+				B60CE2351D75AF7E0011A2D9 /* StreamAnalytics+Protected.h in Headers */,
+				B60CE2361D75AF7E0011A2D9 /* StreamEvent.h in Headers */,
+				B60CE2381D75AF7E0011A2D9 /* StreamEngagement.h in Headers */,
 				B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */,
+				B60CE2341D75AF6F0011A2D9 /* StreamAnalytics.h in Headers */,
+				B60CE23A1D75AF7E0011A2D9 /* StreamClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
