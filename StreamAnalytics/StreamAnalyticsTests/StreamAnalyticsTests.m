@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
-#import "Stream.h"
+#import "StreamAnalytics.h"
 
 /*
  API_KEY 8r9brv6v4xj5
@@ -92,7 +92,7 @@
     content[@"actor"] = @{@"id": @"user:2353540", @"label": @"Tom"};
     content[@"object"] = @{@"id": @"song:34349698", @"label": @"She wolf"};
     content[@"verb"] = @"share";
-    StreamEngagement *event = [StreamImpression createImpressionEventWithContentList:@[content]];
+    StreamImpression *event = [StreamImpression createImpressionEventWithContentList:@[content]];
     event.feedId = @"timeline:tom";
     [[StreamAnalytics sharedInstance] send:event];
 }

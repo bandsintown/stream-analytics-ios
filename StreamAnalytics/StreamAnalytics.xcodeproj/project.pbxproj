@@ -23,21 +23,19 @@
 
 /* Begin PBXBuildFile section */
 		490B6D3E1B8880470088C872 /* StreamAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6D3D1B8880470088C872 /* StreamAnalytics.m */; };
-		490B6D441B8880470088C872 /* libStreamAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B6D381B8880470088C872 /* libStreamAnalytics.a */; };
+		490B6D441B8880470088C872 /* libStreamAnalyticsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B6D381B8880470088C872 /* libStreamAnalyticsLib.a */; };
 		490B6D761B88850B0088C872 /* StreamAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6D751B88850B0088C872 /* StreamAnalyticsTests.m */; };
 		490B6DAF1B8918A70088C872 /* StreamEngagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DAE1B8918A70088C872 /* StreamEngagement.m */; };
 		490B6DBC1B8A70AD0088C872 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
 		49161D291B8C4F4B00BA518F /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
-		493486F91BA183080068C32E /* Stream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; };
 		49C3763B1B8E73C0001F5609 /* StreamEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3763A1B8E73C0001F5609 /* StreamEvent.m */; };
 		49E7492E1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7492D1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift */; };
-		B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B60CE2261D758EE90011A2D9 /* StreamAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6D3D1B8880470088C872 /* StreamAnalytics.m */; };
 		B60CE2281D758EE90011A2D9 /* StreamEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3763A1B8E73C0001F5609 /* StreamEvent.m */; };
 		B60CE22B1D758EE90011A2D9 /* StreamEngagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DAE1B8918A70088C872 /* StreamEngagement.m */; };
 		B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
 		B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
-		B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C376371B8E61EF001F5609 /* Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B899C91D77933A0016082C /* StreamAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6D3B1B8880470088C872 /* StreamAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,14 +62,13 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				493486F91BA183080068C32E /* Stream.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		490B6D381B8880470088C872 /* libStreamAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		490B6D381B8880470088C872 /* libStreamAnalyticsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamAnalyticsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		490B6D3B1B8880470088C872 /* StreamAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamAnalytics.h; sourceTree = "<group>"; };
 		490B6D3D1B8880470088C872 /* StreamAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamAnalytics.m; sourceTree = "<group>"; };
 		490B6D431B8880470088C872 /* StreamAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,12 +83,11 @@
 		49161D281B8C4F4B00BA518F /* StreamClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamClient.m; sourceTree = "<group>"; };
 		498170C31B95AAF00002FF05 /* StreamAnalytics+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamAnalytics+Protected.h"; sourceTree = "<group>"; };
 		498C04A01B99954E00B10C69 /* StreamAnalyticsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamAnalyticsTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		49C376371B8E61EF001F5609 /* Stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stream.h; sourceTree = "<group>"; };
 		49C3763A1B8E73C0001F5609 /* StreamEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamEvent.m; sourceTree = "<group>"; };
 		49E7492D1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAnalyticsSwiftTests.swift; sourceTree = "<group>"; };
-		B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamAnalyticsCarthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60CE20D1D758E9E0011A2D9 /* StreamAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamAnalyticsCarthage.h; sourceTree = "<group>"; };
-		B60CE2101D758E9E0011A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B899C71D7793240016082C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490B6D441B8880470088C872 /* libStreamAnalytics.a in Frameworks */,
+				490B6D441B8880470088C872 /* libStreamAnalyticsLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,9 +129,9 @@
 		490B6D391B8880470088C872 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				490B6D381B8880470088C872 /* libStreamAnalytics.a */,
+				490B6D381B8880470088C872 /* libStreamAnalyticsLib.a */,
 				490B6D431B8880470088C872 /* StreamAnalyticsTests.xctest */,
-				B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */,
+				B60CE20D1D758E9E0011A2D9 /* StreamAnalytics.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,12 +139,12 @@
 		490B6D3A1B8880470088C872 /* StreamAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				C9B899C71D7793240016082C /* Info.plist */,
 				490B6D3B1B8880470088C872 /* StreamAnalytics.h */,
 				498170C31B95AAF00002FF05 /* StreamAnalytics+Protected.h */,
 				490B6D3D1B8880470088C872 /* StreamAnalytics.m */,
 				490B6DAA1B89152C0088C872 /* StreamEvent.h */,
 				49C3763A1B8E73C0001F5609 /* StreamEvent.m */,
-				49C376371B8E61EF001F5609 /* Stream.h */,
 				490B6DAD1B8918A70088C872 /* StreamEngagement.h */,
 				490B6DAE1B8918A70088C872 /* StreamEngagement.m */,
 				490B6DBA1B8A70AD0088C872 /* StreamImpression.h */,
@@ -182,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */,
-				B60CE2101D758E9E0011A2D9 /* Info.plist */,
 			);
 			path = StreamAnalyticsCarthage;
 			sourceTree = "<group>";
@@ -194,17 +189,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60CE2311D758F0A0011A2D9 /* Stream.h in Headers */,
-				B60CE21D1D758E9F0011A2D9 /* StreamAnalyticsCarthage.h in Headers */,
+				C9B899C91D77933A0016082C /* StreamAnalytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		490B6D371B8880470088C872 /* StreamAnalytics */ = {
+		490B6D371B8880470088C872 /* StreamAnalyticsLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 490B6D4C1B8880470088C872 /* Build configuration list for PBXNativeTarget "StreamAnalytics" */;
+			buildConfigurationList = 490B6D4C1B8880470088C872 /* Build configuration list for PBXNativeTarget "StreamAnalyticsLib" */;
 			buildPhases = (
 				490B6D341B8880470088C872 /* Sources */,
 				490B6D351B8880470088C872 /* Frameworks */,
@@ -214,9 +208,9 @@
 			);
 			dependencies = (
 			);
-			name = StreamAnalytics;
+			name = StreamAnalyticsLib;
 			productName = StreamAnalytics;
-			productReference = 490B6D381B8880470088C872 /* libStreamAnalytics.a */;
+			productReference = 490B6D381B8880470088C872 /* libStreamAnalyticsLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		490B6D421B8880470088C872 /* StreamAnalyticsTests */ = {
@@ -237,9 +231,9 @@
 			productReference = 490B6D431B8880470088C872 /* StreamAnalyticsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B60CE20C1D758E9E0011A2D9 /* StreamAnalyticsCarthage */ = {
+		B60CE20C1D758E9E0011A2D9 /* StreamAnalytics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalyticsCarthage" */;
+			buildConfigurationList = B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalytics" */;
 			buildPhases = (
 				B60CE2081D758E9E0011A2D9 /* Sources */,
 				B60CE2091D758E9E0011A2D9 /* Frameworks */,
@@ -250,9 +244,9 @@
 			);
 			dependencies = (
 			);
-			name = StreamAnalyticsCarthage;
+			name = StreamAnalytics;
 			productName = StreamAnalyticsCarthage;
-			productReference = B60CE20D1D758E9E0011A2D9 /* StreamAnalyticsCarthage.framework */;
+			productReference = B60CE20D1D758E9E0011A2D9 /* StreamAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -295,10 +289,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				490B6D371B8880470088C872 /* StreamAnalytics */,
+				490B6D371B8880470088C872 /* StreamAnalyticsLib */,
 				490B6D421B8880470088C872 /* StreamAnalyticsTests */,
 				49E7492F1B9E1270007B23E7 /* UniversalLib */,
-				B60CE20C1D758E9E0011A2D9 /* StreamAnalyticsCarthage */,
+				B60CE20C1D758E9E0011A2D9 /* StreamAnalytics */,
 			);
 		};
 /* End PBXProject section */
@@ -375,12 +369,12 @@
 /* Begin PBXTargetDependency section */
 		490B6D461B8880470088C872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 490B6D371B8880470088C872 /* StreamAnalytics */;
+			target = 490B6D371B8880470088C872 /* StreamAnalyticsLib */;
 			targetProxy = 490B6D451B8880470088C872 /* PBXContainerItemProxy */;
 		};
 		491BDC921BA1837700EEB4B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 490B6D371B8880470088C872 /* StreamAnalytics */;
+			target = 490B6D371B8880470088C872 /* StreamAnalyticsLib */;
 			targetProxy = 491BDC911BA1837700EEB4B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -564,11 +558,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StreamAnalyticsCarthage/Info.plist;
+				INFOPLIST_FILE = StreamAnalytics/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalyticsCarthage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,11 +585,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StreamAnalyticsCarthage/Info.plist;
+				INFOPLIST_FILE = StreamAnalytics/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalyticsCarthage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandsintown.StreamAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,7 +610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		490B6D4C1B8880470088C872 /* Build configuration list for PBXNativeTarget "StreamAnalytics" */ = {
+		490B6D4C1B8880470088C872 /* Build configuration list for PBXNativeTarget "StreamAnalyticsLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490B6D4D1B8880470088C872 /* Debug */,
@@ -643,13 +637,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalyticsCarthage" */ = {
+		B60CE21E1D758E9F0011A2D9 /* Build configuration list for PBXNativeTarget "StreamAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B60CE21F1D758E9F0011A2D9 /* Debug */,
 				B60CE2201D758E9F0011A2D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

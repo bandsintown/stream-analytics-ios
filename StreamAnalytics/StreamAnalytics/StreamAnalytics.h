@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StreamEngagement.h"
+#import "StreamImpression.h"
 #import "StreamEvent.h"
 
+//! Project version number for StreamAnalyticsCarthage.
+FOUNDATION_EXPORT double StreamAnalyticsCarthageVersionNumber;
+
+//! Project version string for StreamAnalyticsCarthage.
+FOUNDATION_EXPORT const unsigned char StreamAnalyticsCarthageVersionString[];
 
 /**
  *
