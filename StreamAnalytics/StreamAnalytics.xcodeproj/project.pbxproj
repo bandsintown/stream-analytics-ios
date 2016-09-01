@@ -36,6 +36,11 @@
 		B60CE22D1D758EE90011A2D9 /* StreamImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B6DBB1B8A70AD0088C872 /* StreamImpression.m */; };
 		B60CE22F1D758EE90011A2D9 /* StreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49161D281B8C4F4B00BA518F /* StreamClient.m */; };
 		C9B899C91D77933A0016082C /* StreamAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6D3B1B8880470088C872 /* StreamAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B899CC1D77ADE40016082C /* StreamAnalytics+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 498170C31B95AAF00002FF05 /* StreamAnalytics+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C9B899CD1D77ADE90016082C /* StreamEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DAA1B89152C0088C872 /* StreamEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B899CE1D77ADEC0016082C /* StreamEngagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DAD1B8918A70088C872 /* StreamEngagement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B899CF1D77ADEF0016082C /* StreamImpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 490B6DBA1B8A70AD0088C872 /* StreamImpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B899D01D77AE000016082C /* StreamClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 49161D271B8C4F4B00BA518F /* StreamClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B899C91D77933A0016082C /* StreamAnalytics.h in Headers */,
+				C9B899CD1D77ADE90016082C /* StreamEvent.h in Headers */,
+				C9B899CE1D77ADEC0016082C /* StreamEngagement.h in Headers */,
+				C9B899CF1D77ADEF0016082C /* StreamImpression.h in Headers */,
+				C9B899CC1D77ADE40016082C /* StreamAnalytics+Protected.h in Headers */,
+				C9B899D01D77AE000016082C /* StreamClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
