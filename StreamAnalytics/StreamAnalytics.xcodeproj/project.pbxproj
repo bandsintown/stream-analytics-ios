@@ -91,7 +91,6 @@
 		49C3763A1B8E73C0001F5609 /* StreamEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamEvent.m; sourceTree = "<group>"; };
 		49E7492D1B9E0760007B23E7 /* StreamAnalyticsSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAnalyticsSwiftTests.swift; sourceTree = "<group>"; };
 		B60CE20D1D758E9E0011A2D9 /* StreamAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamAnalyticsCarthage.h; sourceTree = "<group>"; };
 		C9B899C71D7793240016082C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +125,6 @@
 			children = (
 				490B6D3A1B8880470088C872 /* StreamAnalytics */,
 				490B6D471B8880470088C872 /* StreamAnalyticsTests */,
-				B60CE20E1D758E9E0011A2D9 /* StreamAnalyticsCarthage */,
 				490B6D391B8880470088C872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,14 +175,6 @@
 				490B6D491B8880470088C872 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B60CE20E1D758E9E0011A2D9 /* StreamAnalyticsCarthage */ = {
-			isa = PBXGroup;
-			children = (
-				B60CE20F1D758E9E0011A2D9 /* StreamAnalyticsCarthage.h */,
-			);
-			path = StreamAnalyticsCarthage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
