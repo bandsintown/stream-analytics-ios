@@ -130,21 +130,27 @@ static NSString *const StreamAPIVersion = @"v1.0";
         }
         else
         {
+            if (data == nil || data.length == 0) {
+                statusCode = 500;
+                NSError *err = [NSError errorWithDomain:@"io.getstream.analytics" code:statusCode userInfo:@{
+                                                                                            NSLocalizedDescriptionKey:@"Invalid response from server"
+                                                                                            }];
+                completionHandler(statusCode, data, err); 
+            } else {
+                NSError *dataError;
+                id jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&dataError];
 
-            NSError *dataError;
-            id jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&dataError];
-            
-            if ([NSJSONSerialization isValidJSONObject:jsonData] && dataError != nil) {
-                
-                if(completionHandler) {
-                    completionHandler(statusCode, jsonData, error);
+                if ([NSJSONSerialization isValidJSONObject:jsonData] && dataError != nil) {
+
+                  if(completionHandler) {
+                      completionHandler(statusCode, jsonData, error);
+                  }
+
                 }
-        
-            }
-            else {
-                completionHandler(statusCode, @{@"error":err.localizedDescription}, error);
-            }
-
+                else {
+                  completionHandler(statusCode, @{@"error":err.localizedDescription}, error);
+                }
+          }
         }
         
     }];
